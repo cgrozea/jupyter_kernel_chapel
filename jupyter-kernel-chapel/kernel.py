@@ -129,7 +129,7 @@ class ChapelKernel(Kernel):
 	                              lambda contents: self._write_to_stderr(contents.decode()))
 
 	def compile_with_chpl(self, source_filename, binary_filename):
-	    args = ['chpl', source_filename] + ['-o', binary_filename]
+	    args = ['chpl', '--fast', source_filename] + ['-o', binary_filename]
 	    return self.create_jupyter_subprocess(args)
 
 	def do_execute(self, code, silent, store_history=True,
