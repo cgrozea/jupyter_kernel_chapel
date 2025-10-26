@@ -17,7 +17,7 @@ def read(fname):
     return codecs.open(fpath(fname), encoding='utf-8').read()
 
 setup( name="jupyter-kernel-chapel"
-     , version="0.0.4"
+     , version="0.0.5"
      , description="A Jupyter kernel for chapel"
      , long_description=read(fpath('README.rst'))
      , author="Krishna Kumar Dey"
